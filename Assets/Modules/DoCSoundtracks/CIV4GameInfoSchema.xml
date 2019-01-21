@@ -509,10 +509,21 @@
 	<ElementType name="iCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iNukeInterception" content="textOnly" dt:type="int"/>
 	<ElementType name="iTechShare" content="textOnly" dt:type="int"/>
+	<ElementType name="iFirstAirExperience" content="textOnly" dt:type="int"/> <!-- Leoreth -->
+	<ElementType name="iExistingProductionModifier" content="textOnly" dt:type="int"/> <!-- Leoreth -->
+	<ElementType name="iAirExperience" content="textOnly" dt:type="int"/> <!-- Leoreth -->
+	<ElementType name="SpecialUnit" content="textOnly"/> <!-- Leoreth -->
 	<ElementType name="EveryoneSpecialUnit" content="textOnly"/>
 	<ElementType name="EveryoneSpecialBuilding" content="textOnly"/>
+	<ElementType name="FirstFreeUnit" content="textOnly"/> <!-- Leoreth -->
+	<ElementType name="FreePromotion" content="textOnly"/> <!-- Leoreth -->
 	<ElementType name="bSpaceship" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsNukes" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSatelliteIntercept" content="textOnly" dt:type="boolean"/> <!-- Leoreth -->
+	<ElementType name="bSatelliteAttack" content="textOnly" dt:type="boolean"/> <!-- Leoreth -->
+	<ElementType name="bGoldenAge" content="textOnly" dt:type="boolean"/> <!-- Leoreth -->
+	<ElementType name="bFirstEnemyAnarchy" content="textOnly" dt:type="boolean"/> <!-- Leoreth -->
+	<ElementType name="bRevealsMap" content="textOnly" dt:type="boolean"/> <!-- Leoreth -->
 	<ElementType name="ProjectType" content="textOnly"/>
 	<ElementType name="iNeeded" content="textOnly" dt:type="int"/>
 	<ElementType name="PrereqProject" content="eltOnly">
@@ -568,10 +579,21 @@
 		<element type="iCost"/>
 		<element type="iNukeInterception"/>
 		<element type="iTechShare"/>
+		<element type="iAirExperience"/> <!-- Leoreth -->
+		<element type="iFirstAirExperience"/> <!-- Leoreth -->
+		<element type="iExistingProductionModifier"/> <!-- Leoreth -->
+		<element type="SpecialUnit"/> <!-- Leoreth -->
 		<element type="EveryoneSpecialUnit"/>
 		<element type="EveryoneSpecialBuilding"/>
+		<element type="FirstFreeUnit"/> <!-- Leoreth -->
+		<element type="FreePromotion"/> <!-- Leoreth -->
 		<element type="bSpaceship"/>
 		<element type="bAllowsNukes"/>
+		<element type="bSatelliteIntercept"/> <!-- Leoreth -->
+		<element type="bSatelliteAttack"/> <!-- Leoreth -->
+		<element type="bGoldenAge"/> <!-- Leoreth -->
+		<element type="bFirstEnemyAnarchy"/> <!-- Leoreth -->
+		<element type="bRevealsMap"/> <!-- Leoreth -->
 		<element type="Button"/>
 		<element type="PrereqProjects"/>
 		<element type="VictoryThresholds"/>
@@ -1065,6 +1087,7 @@
 	<ElementType name="iHotKeyPriorityAlt" content="textOnly" dt:type="int"/>
 	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="bVisible" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoGlobalEffects" content="textOnly" dt:type="boolean"/> <!-- Leoreth -->
 	<ElementType name="iGreatPeopleRateChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iHappiness" content="textOnly" dt:type="int"/>
 	<ElementType name="CultureLevelType" content="textOnly"/>
@@ -1103,6 +1126,7 @@
 		<element type="Help"/>
 		<element type="Texture"/>
 		<element type="bVisible"/>
+		<element type="bNoGlobalEffects" minOccurs="0"/> <!-- Leoreth -->
 		<element type="GreatPeopleUnitClass"/>
 		<element type="iGreatPeopleRateChange"/>
 		<element type="Yields"/>
@@ -1317,6 +1341,7 @@
 	<ElementType name="iPlayerAnarchyCounter" content="textOnly" dt:type="int"/>
 	<ElementType name="iCounterespionageNumTurns" content="textOnly" dt:type="int"/>
 	<ElementType name="iCounterespionageMod" content="textOnly" dt:type="int"/>
+	<ElementType name="iBaseExperience" content="textOnly" dt:type="int"/>
 	<ElementType name="EspionageMissionInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -1351,6 +1376,7 @@
 		<element type="iPlayerAnarchyCounter" minOccurs="0"/>
 		<element type="iCounterespionageNumTurns" minOccurs="0"/>
 		<element type="iCounterespionageMod" minOccurs="0"/>
+		<element type="iBaseExperience" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="EspionageMissionInfos" content="eltOnly">
 		<element type="EspionageMissionInfo" maxOccurs="*"/>
